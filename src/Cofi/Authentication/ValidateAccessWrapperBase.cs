@@ -10,11 +10,11 @@ namespace Cofi.Authentication
 
         protected static T GetImplementation<T>(ServiceFactory factory)
         {
-            T implementation;
+            T? implementation;
 
             try
             {
-                 implementation = factory.GetInstance<T>();
+                implementation = factory.GetInstance<T>();
             }
             catch (Exception)
             {
