@@ -2,7 +2,7 @@ using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.Tokens
 {
     public interface IRefreshTokenGenerator
     {

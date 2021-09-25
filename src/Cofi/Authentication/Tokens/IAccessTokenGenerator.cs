@@ -1,4 +1,4 @@
-namespace Cofi.Authentication
+namespace Cofi.Authentication.Tokens
 {
     public interface IAccessTokenGenerator
     {

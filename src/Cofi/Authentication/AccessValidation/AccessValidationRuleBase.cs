@@ -1,7 +1,7 @@
 using System.Diagnostics.Contracts;
 using System.Collections.Generic;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.AccessValidation
 {
     public abstract class AccessValidationRuleBase
     {

@@ -5,13 +5,10 @@ namespace Cofi
 {
     public static class IServiceCollectionExtensions
     {
-        public static DependencyBuilder AddCofi(this IServiceCollection services)
-        {
-            var dependencyBuilder = new DependencyBuilder(services);
+        public static DependencyBuilder AddCofiCore(this IServiceCollection services) => new(services);
 
-            return dependencyBuilder
-                .AddServiceFactory()
-                .AddAuthentication();
-        }
+        public static DependencyBuilder AddCofi(this IServiceCollection services) => services.AddCofiCore()
+            .AddServiceFactory()
+            .AddAuthentication();
     }
 }

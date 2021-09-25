@@ -1,15 +1,12 @@
-using Microsoft.Extensions.DependencyInjection;
+using Cofi.Authentication.AccessValidation;
 
 namespace Cofi.Authentication
 {
-    internal static class DependencyBuilderExtensions
+    public static class DependencyBuilderExtensions
     {
-        public static DependencyBuilder AddAuthentication(this DependencyBuilder builder)
-        {
-            builder.Services
-                .AddSingleton<IAccessValidator, AccessValidator>();
-                
-            return builder;
-        }
+        public static AuthenticationDependencyBuilder AddAuthenticationCore(this DependencyBuilder builder) => new(builder.Services);
+
+        public static AuthenticationDependencyBuilder AddAuthentication(this DependencyBuilder builder) => builder.AddAuthenticationCore()
+            .AddAccessValidation();
     }
 }

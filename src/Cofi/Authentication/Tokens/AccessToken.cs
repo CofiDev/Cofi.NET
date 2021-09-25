@@ -1,10 +1,9 @@
 using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.Tokens
 {
-    public record TokenInput
+    public record AccessToken
     {
         public string ClientDeviceId { get; init; } = default!;
         public string UserId { get; init; } = default!;

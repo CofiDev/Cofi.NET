@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Cofi.Authentication.Exceptions;
+using Cofi.Authentication.AccessValidation.Exceptions;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.AccessValidation
 {
     public abstract class AccessValidatorBase
     {

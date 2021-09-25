@@ -2,7 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.AccessValidation
 {
     internal abstract class ValidateAccessWrapperBase
     {

@@ -1,4 +1,4 @@
-namespace Cofi.Authentication
+namespace Cofi.Authentication.AccessValidation
 {
     public static class AccessValidationRuleNames
     {

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.AccessValidation
 {
     public interface IAccessValidationRule
     {

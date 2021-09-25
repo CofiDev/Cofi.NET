@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using Cofi.Exceptions;
 using System.Text;
 
-namespace Cofi.Authentication.Exceptions
+namespace Cofi.Authentication.AccessValidation.Exceptions
 {
     public class AccessValidationFailedException : CofiException
     {

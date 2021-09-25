@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Cofi.Authentication
+namespace Cofi.Authentication.AccessValidation
 {
     public interface IAccessValidator
     {
