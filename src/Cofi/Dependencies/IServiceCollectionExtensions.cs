@@ -1,4 +1,3 @@
-using Cofi.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cofi
@@ -8,7 +7,6 @@ namespace Cofi
         public static DependencyBuilder AddCofiBase(this IServiceCollection services) => new(services);
 
         public static DependencyBuilder AddCofi(this IServiceCollection services) => services.AddCofiBase()
-            .AddServiceFactory()
-            .AddAuthentication();
+            .AddServiceFactory();
     }
 }
